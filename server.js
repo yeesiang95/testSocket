@@ -17,7 +17,7 @@ io.on('connection',(socket,room)=>{
         else{
             socket.to(room).emit('receive-message',message);
         }
-        console.log(message);
+        // console.log(message);
     })
 
     socket.on('join-room',(room,cb)=>{
